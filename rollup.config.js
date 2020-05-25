@@ -11,8 +11,6 @@ const banner = `/*!
  * ${ license }
  */`
 
-/*const plugins = [commonjs()]*/
-
 export default [
   {
     input: 'src/rollup-plugin-ava-test-example.js',
