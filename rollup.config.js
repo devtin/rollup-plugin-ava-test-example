@@ -17,9 +17,8 @@ export default [
     output: [
       {
         file: `dist/rollup-plugin-ava-test-example.js`,
-        format: 'umd',
-        banner,
-        name: 'ava2json'
+        format: 'cjs',
+        banner
       },
     ]
   }
