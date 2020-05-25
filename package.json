@@ -1,0 +1,82 @@
+{
+  "name": "rollup-plugin-ava-test-example",
+  "version": "1.0.0",
+  "description": "Loads jsdoc examples from local AVA unit tests",
+  "author": "Martin Rafael Gonzalez <tin@devtin.io>",
+  "main": "dist/rollup-plugin-ava-test-example.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:live": "nodemon -w src -w test --exec npm run build",
+    "lint": "eslint --ext .js --ignore-path .gitignore src/",
+    "test": "ava --serial --verbose",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devtin/rollup-plugin-ava-test-example.git"
+  },
+  "keywords": [
+    "ava",
+    "test",
+    "rollup",
+    "json",
+    "annotate",
+    "documentation"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devtin/rollup-plugin-ava-test-example/issues"
+  },
+  "homepage": "https://github.com/devtin/rollup-plugin-ava-test-example#readme",
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "ava": "^3.8.2",
+    "eslint": "^7.1.0",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.4",
+    "rollup": "^2.10.9",
+    "standard-version": "^8.0.0"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.test.js",
+      "src/**/*.unit.js",
+      "!test/fixtures"
+    ],
+    "require": [
+      "esm",
+      "./test/setup.js"
+    ],
+    "babel": true,
+    "snapshotDir": "test/snapshots"
+  },
+  "eslintConfig": {
+    "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "env": {
+      "es6": true,
+      "node": true,
+      "commonjs": true
+    },
+    "globals": {
+      "BigInt": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "ignorePatterns": [
+      "*.unit.js"
+    ]
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "npm run lint && npm run build",
+      "precommit": "npm run --silent build > /dev/null 2>&1 && git add ."
+    }
+  },
+  "dependencies": {
+    "ava-to-json": "^1.0.0",
+    "fs-extra": "^9.0.0"
+  }
+}
