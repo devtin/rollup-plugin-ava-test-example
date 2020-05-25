@@ -24,7 +24,7 @@ export default function ({ suffix = `.unit.js`, extensions = ['.js'], ava2jsonOp
         if (await pathExists(unit)) {
           const examples = (await parseAvaFile(unit, ava2jsonOptions)).map(avaTestToExample)
           const finalExample = examples.join('\n\n').split('\n').map(l => ` * ${ l }`).join('\n')
-          code = code.replace(new RegExp(`^ \\* ${ jsdocTag }+$`, 'mg'), finalExample)
+          code = code.replace(new RegExp(`^ \\* ${ jsdocTag }$`, 'mg'), finalExample)
         }
         return { code }
       }
