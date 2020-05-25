@@ -1,4 +1,6 @@
 import { name, version, author, license } from './package.json'
+import resolve from '@rollup/plugin-node-resolve'
+import commonjs from '@rollup/plugin-commonjs'
 
 const initialYear = 2020
 const yearsActive = new Date().getFullYear() !== initialYear ? `${ initialYear }-${ new Date().getFullYear() }` : initialYear
@@ -20,6 +22,7 @@ export default [
         format: 'cjs',
         banner
       },
-    ]
+    ],
+    plugins: [commonjs(), resolve()]
   }
 ]
