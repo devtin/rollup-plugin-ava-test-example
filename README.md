@@ -59,7 +59,7 @@ test(`Add a with b`, t => {
  * ```js
  * t.is(add(1, 2), 3)
  * t.not(add(2, 2), 5) // two and two NOT always makes a 5 ):
- * `\`\`\``
+ * ```
  */
 export function myFunction (a, b) {
   return a + b
