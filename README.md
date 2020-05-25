@@ -32,9 +32,9 @@ export default {
 *src/my-function.js* (entry point)
 ```js
 /**
-* Adds a + b
-* @example-test
-*/
+ * Adds a + b
+ * @example-test
+ */
 export function myFunction (a, b) {
   return a + b
 }
