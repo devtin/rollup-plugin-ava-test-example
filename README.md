@@ -33,8 +33,8 @@ const plugins = [
     // extensions: ['.js'], // file extensions to transform
     // ava2jsonOptions: {}, // ava2json options: https://github.com/devtin/ava-to-json
     // jsdocTag: '@example-test', // the jsdocTag to look for
-  }
-)]
+  })
+]
 
 export default {
   input: 'src/my-function.js',
