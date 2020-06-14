@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/devtin/rollup-plugin-ava-test-example/compare/v1.0.2...v1.0.4) (2020-06-14)
+
+
+### Bug Fixes
+
+* embed ava-to-json shared patterns ([598ac6a](https://github.com/devtin/rollup-plugin-ava-test-example/commit/598ac6a8e77b997ff60813df6bf39a0f84d43f4d))
+
 ### [1.0.3](https://github.com/devtin/rollup-plugin-ava-test-example/compare/v1.0.2...v1.0.3) (2020-05-26)
 
 ### [1.0.2](https://github.com/devtin/rollup-plugin-ava-test-example/compare/v1.0.1...v1.0.2) (2020-05-25)

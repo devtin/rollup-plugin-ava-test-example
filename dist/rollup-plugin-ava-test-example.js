@@ -1,5 +1,5 @@
 /*!
- * rollup-plugin-ava-test-example v1.0.3
+ * rollup-plugin-ava-test-example v1.0.4
  * (c) 2020 Martin Rafael Gonzalez <tin@devtin.io>
  * MIT
  */

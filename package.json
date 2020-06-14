@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-ava-test-example",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Loads jsdoc examples from local AVA unit tests",
   "author": "Martin Rafael Gonzalez <tin@devtin.io>",
   "main": "dist/rollup-plugin-ava-test-example.js",
