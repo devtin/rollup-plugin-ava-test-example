@@ -21,6 +21,11 @@ export default [
         banner
       },
     ],
-    plugins: [commonjs(), resolve()]
+    plugins: [
+      commonjs({
+        include: 'node_modules/**'
+      }),
+      resolve()
+    ]
   }
 ]
