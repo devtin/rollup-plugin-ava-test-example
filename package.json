@@ -79,6 +79,6 @@
   },
   "dependencies": {
     "ava-to-json": "^1.0.0",
-    "fs-extra": "^9.0.0"
+    "fs-extra": "^10.0.0"
   }
 }
